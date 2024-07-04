@@ -1,0 +1,84 @@
+.property-container {
+  gap: 2rem;
+  position: relative;
+  border: 1px solid red;
+}
+
+.property-container .like {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.property-container > img {
+  align-self: center;
+  max-height: 35rem;
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.property-details {
+  /* border: 1px solid red; */
+  width: 100%;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.property-details > div {
+  /* border: 1px solid green; */
+  flex: 1;
+  gap: 1.5rem;
+}
+
+.property-details .left .head {
+  /* border: 1px solid blue; */
+  width: 100%;
+  justify-content: space-between;
+}
+
+.facilities {
+  /* border: 1px solid red; */
+  gap: 1rem;
+  font-size: 0.9rem;
+  padding: 1rem;
+}
+
+.facility {
+  gap: 0.5rem;
+}
+
+.property-details .left .button {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.property-details .left .button:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 700px) {
+  .property-container > div {
+    flex-direction: column;
+  }
+
+  .property-details > div {
+    width: 100%;
+  }
+
+  .head {
+    flex-direction: column;
+  }
+
+  .facilities {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
